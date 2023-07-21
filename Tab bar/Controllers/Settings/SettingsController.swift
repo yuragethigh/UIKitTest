@@ -13,6 +13,9 @@ class SettingsController: BaseController {
         super.viewDidLoad()
         
         title = "Setting"
-
+        navigationController?.tabBarItem.title = Resourses.Strings.TabBar.settings
+        
+//        addNavBarButton(at: .left, with: "Pause")
+//        addNavBarButton(at: .right, with: "Finish")
     }
 }

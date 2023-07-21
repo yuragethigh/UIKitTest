@@ -14,5 +14,9 @@ class OverviewController: BaseController {
         super.viewDidLoad()
         
         title = "Overview"
+        navigationController?.tabBarItem.title = Resourses.Strings.TabBar.overview
+        
+        addNavBarButton(at: .left, with: "Pause")
+        addNavBarButton(at: .right, with: "Finish")
     }
 }
